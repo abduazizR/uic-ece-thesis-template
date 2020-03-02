@@ -1,0 +1,77 @@
+%% UICTHESI.TEX
+%% Author: Arindam Bose
+%% University of Illinois at Chicago
+%
+\documentclass{bin/uicthesi}
+
+% helpers
+\input{bin/packages.tex}
+\input{bin/settings.tex}
+\input{bin/symbols.tex} % version 2.0.11 compatible
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CHAPTER CODES
+% chapter_introduction	: 2f09
+% chapter_1				: 4c3f
+% chapter_2				: a269
+% chapter_3				: d18f
+% chapter_4				: 074d
+% chapter_5				: 1a36
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Declarations for front matter
+\title{Title of Your Thesis}
+\author{Author's Name}
+\pdegrees{Author's degree, year}
+\degree{Doctor of Philosophy in Electrical and Computer Engineering}
+\committee{Member 1, Chair and Advisor \\ 
+	Member 2 \\ 
+	Member 3 \\ 
+	Member 4 \\ 
+	Member 5, Affiliation}
+\makeatletter
+
+\begin{document}
+\maketitle
+\copyrightpage
+
+% supplimentary pages
+\dedication\input{util/dedications.tex}
+\acknowledgements\input{util/acknowledgements.tex}
+\preface\input{util/preface.tex}
+\authorscontribution\input{util/contribution.tex}
+\tableofcontents
+\listoftables
+\listoffigures
+\listofalgorithm
+\listofabbreviations\input{util/abbreviations.tex}
+\listofnotations\input{util/notations.tex}
+\summary\input{util/summary.tex}
+
+% chapters
+\input{util/chapter_introduction.tex}
+\part[Part I]{Part I}
+	\subpart{Subpart I A}
+		\input{util/chapter_1.tex}
+	\subpart{Subpart I B}
+		\input{util/chapter_2.tex}
+\part[Part II]{Part II}
+	\subpart{Subpart II A}
+		\input{util/chapter_3.tex}
+	\subpart{Subpart II B}
+		\input{util/chapter_4.tex}
+	\subpart{Subpart II C}
+		\input{util/chapter_5.tex}
+
+% appendices
+\appendices
+\appendix\input{util/appendices.tex}
+
+% references
+%\nocite{*}
+\bibformb
+\bibliography{util/bibphd.bib}
+
+\vita\input{util/vita.tex}
+\makeatother
+\end{document}

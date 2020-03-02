@@ -1,0 +1,35 @@
+%% ABSTRACT AND KEYWORDS
+\def\abstract#1{\small{\textbf{Overview:}} #1 \normalsize}
+\def\keywords#1{\small{\textbf{Keywords:}} #1 \normalsize}
+
+%% SUBPART
+\titleclass{\subpart}{page}[\part]
+\newcounter{subpart}[part]
+%\numberwithin{chapter}{subpart}
+\renewcommand{\thesubpart}{\thepart-\Alph{subpart}}
+\titleformat{\subpart}[display]{\addvspace{15em}\centering\normalfont\Large\bfseries}%
+{\thesubpart}{0pc}{\huge\bfseries}
+\titlespacing{\subpart}{0pt}{0pt}{0pt}
+\titlecontents{subpart}[0pt]{\addvspace{1pc}\normalfont\bfseries}%
+{\hskip 1.5em\thecontentslabel\enspace\enspace\large}%
+{\normalfont\large\bfseries}{\hspace{2em plus 1fill}\large\contentspage}
+
+%% APPENDIX TITLE
+\def\appendixtitle#1{\vspace{-20pt}\noindent\hfil\large{\transparentbold{#1}} \par\nobreak\vspace{20pt}}
+
+%% SUBSEC
+\newcommand{\subsec}[1]{\par\noindent\underline{\textbf{#1}}}
+
+%% BLANK FOOTNOTE
+\newcommand\blfootnote[1]{%
+	\begingroup
+	\renewcommand\thefootnote{}\footnote{#1}%
+	\addtocounter{footnote}{-1}%
+	\endgroup
+}
+
+\epstopdfsetup{outdir=./eps-to-pdf/}
+
+%% WARNING SUPPRESSIONS
+\pdfminorversion=7
+\pdfsuppresswarningpagegroup=1

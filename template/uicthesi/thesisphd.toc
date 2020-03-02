@@ -1,0 +1,39 @@
+\addvspace {\baselineskip }
+\contentsline {chapter}{\xnumberline {1\hskip 2em}\uppercase {Introduction}}{1}% 
+\contentsline {section}{\numberline {1.1}Section Title}{2}% 
+\contentsline {subsection}{\numberline {1.1.1}Subsection Title}{2}% 
+\contentsline {subsubsection}{\numberline {1.1.1.1}Part I: Title}{2}% 
+\contentsline {subsubsection}{\numberline {1.1.1.2}Part II: Title}{2}% 
+\contentsline {part}{Part \uppercase {I} \hspace {1em}Part I}{5}% 
+\contentsline {subpart}{\numberline {I-A}Subpart I A}{6}% 
+\addvspace {\baselineskip }
+\contentsline {chapter}{\xnumberline {2\hskip 2em}\uppercase {Paper I Title}}{7}% 
+\contentsline {section}{\numberline {2.1}Introduction}{7}% 
+\contentsline {subpart}{\numberline {I-B}Subpart I B}{8}% 
+\addvspace {\baselineskip }
+\contentsline {chapter}{\xnumberline {3\hskip 2em}\uppercase {Paper I Title}}{9}% 
+\contentsline {section}{\numberline {3.1}Introduction}{9}% 
+\contentsline {part}{Part \uppercase {II} \hspace {1em}Part II}{10}% 
+\contentsline {subpart}{\numberline {II-A}Subpart II A}{11}% 
+\addvspace {\baselineskip }
+\contentsline {chapter}{\xnumberline {4\hskip 2em}\uppercase {Paper I Title}}{12}% 
+\contentsline {section}{\numberline {4.1}Introduction}{12}% 
+\contentsline {subpart}{\numberline {II-B}Subpart II B}{13}% 
+\addvspace {\baselineskip }
+\contentsline {chapter}{\xnumberline {5\hskip 2em}\uppercase {Paper I Title}}{14}% 
+\contentsline {section}{\numberline {5.1}Introduction}{14}% 
+\contentsline {subpart}{\numberline {II-C}Subpart II C}{15}% 
+\addvspace {\baselineskip }
+\contentsline {chapter}{\xnumberline {6\hskip 2em}\uppercase {Paper I Title}}{16}% 
+\contentsline {section}{\numberline {6.1}Introduction}{16}% 
+\addvspace {\baselineskip }
+\contentsline {chapter}{\xnumberline {\ }APPENDICES}{17}% 
+\contentsline {chapter}{\xnumberline {\ }\ \ \ \ \ Appendix A}{18}% 
+\contentsline {chapter}{\xnumberline {\ }\ \ \ \ \ Appendix B}{19}% 
+\contentsline {chapter}{\xnumberline {\ }\ \ \ \ \ Appendix C}{20}% 
+\contentsline {chapter}{\xnumberline {\ }\ \ \ \ \ Appendix D}{21}% 
+\addvspace {\baselineskip }
+\contentsline {chapter}{\xnumberline {\ }CITED LITERATURE}{22}% 
+\addvspace {\baselineskip }
+\contentsline {chapter}{\xnumberline {\ }VITA}{23}% 
+\contentsfinish 
