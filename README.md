@@ -1,4 +1,4 @@
-# PhD Thesis: UIC ECE template
+# PhD Thesis: UIC ECE Template
 ## Author's Name
 #### Doctor of Philosophy in Electrical Engineering
 #### University of Illinois at Chicago
