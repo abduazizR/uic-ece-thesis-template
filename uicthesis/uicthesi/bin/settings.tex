@@ -20,6 +20,9 @@
 %% SUBSEC
 \newcommand{\subsec}[1]{\par\noindent\underline{\textbf{#1}}}
 
+%% BOLD AND UNDERLINE
+\newcommand{\ubf}[1]{\underline{\textbf{#1}}}
+
 %% BLANK FOOTNOTE
 \newcommand\blfootnote[1]{%
 	\begingroup
@@ -33,3 +36,10 @@
 %% WARNING SUPPRESSIONS
 \pdfminorversion=7
 \pdfsuppresswarningpagegroup=1
+
+\DeclareFontFamily{OT1}{dancers}{}
+\DeclareFontShape{OT1}{dancers}{m}{n}{<-15> dancers <15-> dancers20}{}
+
+\newcommand{\dancers}[1]{{%
+		\usefont{OT1}{dancers}{m}{n}\spaceskip=5pt
+		#1}}

@@ -9,7 +9,7 @@
 %\usepackage[dvipsnames]{xcolor}
 
 \def \Author{Arindam~Bose}
-\def \Version{2.0.11}
+\def \Version{2.0.15}
 \def \Update{\today}
 
 % Lower case bold English alphabets
@@ -197,19 +197,20 @@
 \def\bone{\boldsymbol{1}}
 
 % Sets and notations
-\newcommand{\binaryB}[1]{\mathds{B}^{#1}}
-\newcommand{\complexC}[1]{\mathds{C}^{#1}}
+\newcommand{\binaryB}[1][]{\mathds{B}^{#1}}
+\newcommand{\complexC}[1][]{\mathds{C}^{#1}}
 \newcommand{\expecE}[1]{\mathds{E}\left\{{#1}\right\}}
-\newcommand{\naturalN}[1]{\mathds{N}^{#1}}
+\newcommand{\naturalN}[1][]{\mathds{N}^{#1}}
 \newcommand{\probP}[1]{\mathds{P}\mathrm{r}\left\{{#1}\right\}}
-\newcommand{\rationalQ}[1]{\mathds{Q}^{#1}}
-\newcommand{\realR}[1]{\mathds{R}^{#1}}
-\newcommand{\realRp}[1]{\mathds{R}_{+}^{#1}}
-\newcommand{\realRn}[1]{\mathds{R}_{-}^{#1}}
-\newcommand{\integerZ}[1]{\mathds{Z}^{#1}}
+\newcommand{\rationalQ}[1][]{\mathds{Q}^{#1}}
+\newcommand{\realR}[1][]{\mathds{R}^{#1}}
+\newcommand{\realRp}[1][]{\mathds{R}_{+}^{#1}}
+\newcommand{\realRn}[1][]{\mathds{R}_{-}^{#1}}
+\newcommand{\integerZ}[1][]{\mathds{Z}^{#1}}
 
 % Matrix terms
-\def\tr#1{\mathrm{Tr}\left(#1\right)}
+\def\tr#1{\mathrm{tr}\left(#1\right)}
+\def\Tr#1{\mathrm{Tr}\left(#1\right)}
 \def\vec#1{\mathrm{vec}\left(#1\right)}
 \def\diag#1{\mathrm{diag}\left(#1\right)}
 \def\Diag#1{\mathrm{Diag}\left(#1\right)}
@@ -225,6 +226,8 @@
 \def\acsc#1{\csc^{-1}\left(#1\right)}
 \def\asec#1{\sec^{-1}\left(#1\right)}
 \def\acot#1{\cot^{-1}\left(#1\right)}
+\newcommand{\parderiv}[3][]{\dfrac{\partial^{#1} #2}{\partial #3^{#1}}}
+\newcommand{\deriv}[3][]{\dfrac{d^{#1} #2}{d#3^{#1}}}
 \def\implies{\Rightarrow}
 \def\half{\frac{1}{2}}
 \def\roothalf{\frac{1}{\sqrt{2}}}
@@ -233,9 +236,9 @@
 \def\fourth{\frac{1}{4}}
 \def\fifth{\frac{1}{5}}
 \def\threequarter{\frac{3}{4}}
-\def\ejomg{e^{j\omega}}
-\def\ejnomg{e^{-j\omega}}
-\def\zinv{z^{-1}}
+\newcommand{\ejomg}[1][]{e^{j#1\omega}}
+\newcommand{\ejnomg}[1][]{e^{-j#1\omega}}
+\newcommand{\zinv}[1][]{z^{\ifx&#1&-1\else-#1\fi}}
 \def\sgn#1{\mathrm{sgn}\left(#1\right)}
 \def\sign#1{\mathrm{sign}\left(#1\right)}
 \def\csign#1{\mathrm{csign}\left(#1\right)}
@@ -244,8 +247,8 @@
 \def\oh#1{o\left(#1\right)}
 \def\d#1{\mathrm{d}#1}
 \def\st{~\mathrm{s.t.}~}
-\def\ow{~\mathrm{otherwise}~}
-\def\ew{~\mathrm{elsewhere}~}
+\def\ow{~\mathrm{otherwise}}
+\def\ew{~\mathrm{elsewhere}}
 \def\eg{\emph{e.g.}}
 \def\ie{\emph{i.e.}}
 \def\wrt{\emph{w.r.t.~}}
@@ -253,6 +256,8 @@
 \def\etc{\emph{etc.~}}
 \def\viz{\emph{viz.}}
 \def\conv{\circledast}
+\def\ord#1{^\text{#1}}
+\def\eig#1{\mathrm{eig}\left(#1\right)}
 
 % Basic text colors
 \def\white#1{\textcolor{white}{#1}}

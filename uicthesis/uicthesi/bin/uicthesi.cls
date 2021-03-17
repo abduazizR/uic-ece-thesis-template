@@ -511,6 +511,11 @@
 %
 % \subsection{Algorithm}
 %    \begin{macrocode}
+\newcounter{algorithm}
+\def\thealgorithm{\arabic{algorithm}}
+\def\p@algorithm{Algorithm~}
+\def\fps@algorithm{tbp}
+\def\ftype@algorithm{3}
 \def\ext@algorithm{loa}
 %    \end{macrocode}
 %
