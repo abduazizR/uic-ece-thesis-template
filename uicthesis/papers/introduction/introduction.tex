@@ -1,22 +1,44 @@
 \chapter{Introduction}\label{ch:\CHID}
-\lipsum[1-4]
+This template was created mainly to keep things organized. In terms of design rules, it closely follows the UIC ECE thesis template. Although it was created in 2019, design rules may change in the future. So you might need to update the contents in the `bin' folder and modify some lines in the code. However, otherwise you don't need to touch the `bin' folder. Some important things to keep in mind,
+\begin{enumerate}
+	\item use `\textbackslash CHID\_' to label everything, so that you can refer anything from anywhere without worrying about duplicate labels. Follow the examples in the below.
+	\item Every paper in the `papers' folders has a `figures' folder inside it. Put figures in the corresponding `figures' folder.
+	\item Put appendices in appendices.tex with appropriate CHID.
+	\item Good luck!
+\end{enumerate}
+
+\section{Use of CHID}
+Notice how the content is being referred outside the its own chapter.
+\begin{itemize}
+	\item \ref{\CHID_fig:exmple_image} is in the Chapter \ref{ch:\CHID}.
+	\item \ref{4c3f_fig:exmple_image} is in the Chapter \ref{ch:4c3f}.
+	\item \ref{a269_fig:exmple_image} is in the Chapter \ref{ch:a269}.
+	\item \ref{d18f_fig:exmple_image} is in the Chapter \ref{ch:d18f}.
+	\item \ref{074d_fig:exmple_image} is in the Chapter \ref{ch:074d}.
+	\item \ref{1a36_fig:exmple_image} is in the Chapter \ref{ch:1a36}.
+\end{itemize}
+You can use CHID when referring to the content inside its own chapter, but you need to use the code if you want to use it outside. The benefit is that you can use duplicate label names in a different chapter, but as you are using CHID, the it will be labeled differently.
+Use the CHID defined for the chapter in the corresponding chapter.tex in `sources' folder.
+Generate new codes if need be.
 
 \subsec{This} is a paragraph with a name.
 
-\section{Section Title}
-Some text \cite{grant2014cvx}.
-\subsection{Subsection Title}
-Some more texts
-\subsubsection{Part I: Title}
+\section{Bibliography}
+Keep all your bibtex in `bibphd.bib' file in the `sources' folder. Unique identifier is needed \eg, \cite{grant2014cvx}.
+\section{Extra contents}
+\subsection{Figures}
+An example figure is shown in \ref{\CHID_fig:exmple_image}.
 \begin{figure}[t]
 	\centering
-	\includegraphics[width=0.5\textwidth]{example-image-a}
-	\caption{An example figure}\label{\CHID_fig:SL}
+	\includegraphics[width=0.5\textwidth]{example-image}
+	\caption{An example figure}\label{\CHID_fig:exmple_image}
 \end{figure}
 
+\subsection{Tables}
+An example table is shown in \ref{\CHID_tb:exmple_table}.
 \begin{table}[!t]
 	\caption{An example table}
-	\label{\CHID_tb:sequence}
+	\label{\CHID_tb:exmple_table}
 	\centering
 	\begin{tabular}{|l|l|l|}
 		\hline\hline
@@ -30,9 +52,11 @@ Some more texts
 	\vspace{5pt}
 \end{table}
 
-\subsubsection{Part II: Title}
+
+\subsection{Algorithms}
+An example table is shown in \ref{\CHID_alg:1}.
 \begin{algorithm}[t]
-	\caption{\textsc{ExampleAlgorithm}}\label{alg:1}
+	\caption{\textsc{ExampleAlgorithm}}\label{\CHID_alg:1}
 	\begin{algorithmic}[1]
 		\Require \texttt{var1}, \texttt{var2}, $N$ 
 		\Ensure \texttt{var1} $\gets$ 1, \texttt{var2} $\gets$ 1, \texttt{flag} $\gets$ 0 
@@ -64,3 +88,5 @@ Some more texts
 		\State \Return \texttt{var3}
 	\end{algorithmic}
 \end{algorithm}
+
+\lipsum[1-4]
